@@ -11,7 +11,7 @@ const theme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: "transparent"
+    // background: "transparent"
   }
 }
 
@@ -28,7 +28,11 @@ const App = () => {
 
   return (
     <NavigationContainer theme={theme}>
-      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
+      <Stack.Navigator screenOptions={{
+          headerShown: false,
+          // detachPreviousScreen: true,
+          presentation: 'card'
+          }} initialRouteName="Home">
         <Stack.Screen name="Home" component={Home}/>
         <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
