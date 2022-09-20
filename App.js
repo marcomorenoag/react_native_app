@@ -1,4 +1,4 @@
-import { DefaultTheme, NavigationContainer } from '@react-navigation//native';
+import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { useFonts } from 'expo-font';
 

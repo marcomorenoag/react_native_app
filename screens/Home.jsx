@@ -28,8 +28,8 @@ const Home = () => {
           left: 0,
           zIndex: -1,
         }}>
-          <View style={{ height: 300, backgroundColor: COLORS.primary}} />
-          <View style={{ flex: 1, backgroundColor: COLORS.white}} />
+          <View style={{ height: 300, backgroundColor: COLORS.primary, borderBottomLeftRadius: 25, borderBottomRightRadius: 25 }} />
+          <View style={{ flex: 1, backgroundColor: COLORS.white }} />
         </View>
       </View>
     </SafeAreaView>
